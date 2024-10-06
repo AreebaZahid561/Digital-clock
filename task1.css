@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#clock-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+h1 {
+  font-size: 26px;
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 12px;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+  margin: 0 5px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f3f3f3;
+  color: #333;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+input[type="text"]:disabled {
+  background-color: #fafafa;
+  color: #444;
+}
+#date {
+  font-size: 20px;
+  color: #777;
+  font-weight: 500;
+}
+input[type="text"]:hover {
+  border-color: #f27a7a;
+  background-color: #fff;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#clock-container {
+  animation: fadeIn 1.5s ease;
+}
